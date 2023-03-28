@@ -1,0 +1,27 @@
+redis:
+  center:
+    universal:
+      # 地址
+      addrs:
+        - "127.0.0.1:6379"
+      # DB
+      # Password  # 密码
+      # maxRetries
+      # minRetryBackoff
+      # maxRetryBackoff
+      # dialTimeout
+      # readTimeout
+      # writeTimeout
+      # poolSize
+      # minIdleConns
+      # maxConnAge
+      # poolTimeout
+      # idleTimeout
+      # idleCheckFrequency
+
+      # maxRedirects
+      # readOnly
+      # routeByLatency
+      # routeRandomly
+
+      # masterName
