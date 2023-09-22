@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if err := config.LoadSource(file.NewSource("./config.yaml", false)); err != nil {
-		logger.FatalFiled("fault to load config file", logger.Err(err))
+		logger.FatalField("fault to load config file", logger.Err(err))
 	}
 	_ = xredis.NewRedis("center")
 }

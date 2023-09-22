@@ -13,11 +13,11 @@ type Redis interface {
 func NewRedis(name string) Redis {
 	cfg := new(Config)
 	if err := config.Get("redis." + name).Scan(cfg); err != nil {
-		logger.FatalFiled("fault to load redis config", logger.Err(err))
+		logger.FatalField("fault to load redis config", logger.Err(err))
 	}
 	cli := redis.NewUniversalClient(&cfg.Universal)
 	if err := cli.Ping().Err(); err != nil {
-		logger.FatalFiled("fault to connect redis", logger.Err(err))
+		logger.FatalField("fault to connect redis", logger.Err(err))
 	}
 	return cli
 }
