@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	xredis "github.com/imkuqin-zw/yggdrasil-redis"
+	xredis "github.com/imkuqin-zw/yggdrasil-redis/v2"
 	"github.com/imkuqin-zw/yggdrasil/pkg/config"
 	"github.com/imkuqin-zw/yggdrasil/pkg/config/source/file"
 	"github.com/imkuqin-zw/yggdrasil/pkg/logger"

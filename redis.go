@@ -18,6 +18,7 @@ func NewRedis(name string) Redis {
 	if err := config.Get("redis." + name).Scan(cfg); err != nil {
 		logger.FatalField("fault to load redis config", logger.Err(err))
 	}
+	redis.SetLogger(newLogging(cfg))
 	cli := newUniversalClient(cfg)
 	ctx, cancel := context.WithTimeout(context.TODO(), time.Second*3)
 	defer cancel()

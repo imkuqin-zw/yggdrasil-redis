@@ -1,6 +1,8 @@
 redis:
   center:
     cluster: true
+    logger:
+      enable: true
     TLSConfig:
       InsecureSkipVerify: true
     universal:
