@@ -1,9 +1,12 @@
 redis:
   center:
+    cluster: true
+    TLSConfig:
+      InsecureSkipVerify: true
     universal:
       # 地址
       addrs:
-        - "127.0.0.1:6379"
+        - "clustercfg.streamingx-redis-formal.jis2bf.usw2.cache.amazonaws.com:6582"
       # DB
       # Password  # 密码
       # maxRetries
